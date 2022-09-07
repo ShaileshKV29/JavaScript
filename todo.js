@@ -11,12 +11,12 @@ function addItem()
         item_count++;
         let list_id = "item-" + item_count;
         let item = document.getElementById("list_ul");
-        item.innerHTML += `<li id="${list_id}">${data}<button value="${list_id}">X</button></li>`;
+        item.innerHTML += `<li id="${list_id}">${data}<button value="${list_id}" onclick="deleteItem(this)">X</button></li>`;
         document.getElementById("todo_input").value = "";
     }
 }
 
-function deleteItem()
+function deleteItem(element)
 {
-
+    document.getElementById(element.value).remove();
 }
