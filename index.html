@@ -9,18 +9,13 @@
 </head>
 <body>
     <div id="div-1">
-        <div class="list_container">
-            
-        </div>
         <input type="text" id="todo_input" placeholder="Todo Item">
-        <button class="btn" id="btn" onclick="textChange()">Click</button>
+        <button class="btn" id="btn item_add" onclick="addItem()">Add Item</button>
+        <div class="list_container">
+            <ul id="list_ul">
+            </ul>
+        </div>
     </div>
+    <script src="todo.js"></script>
 </body>
-    <script>
-        // document.getElementById("div-1").innerHTML = "Text Changed";
-        function textChange()
-        {
-            document.getElementById("text").innerHTML = "Text Changed"
-        }
-    </script>
 </html>
