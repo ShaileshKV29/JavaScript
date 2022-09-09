@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.tab-nav{
+    padding: 60px;
+}
+
+.tab-nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.tab-nav ul li{
+    list-style-type: none;
+    font-family: 'Roboto';
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.tab-nav ul li:hover{
+    background-color: #1b1c1ec1;
+    color: aliceblue;
+}
