@@ -5,15 +5,18 @@ body{
 
 .tab-nav{
     padding: 60px;
+    padding-bottom: 10px;
 }
 
 .tab-nav ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    width: 60vw;
+    width: 68%;
     margin: 0 auto;
-    gap: 30px;
+    /* gap: 30px; */
+    background-color: #eee;
+    padding: 0;
 }
 
 .tab-nav ul li{
@@ -21,11 +24,34 @@ body{
     font-family: 'Roboto';
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     cursor: pointer;
 }
 
 .tab-nav ul li:hover{
     background-color: #1b1c1ec1;
     color: aliceblue;
+}
+
+.tab-section-container{
+    width: 60%;
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto';
+}
+
+.tab-section-container .tab{
+    margin: 20px 0;
+    font-size: 20px;
+    display: none;
+    line-height: 1.6;
+}
+
+.tab-section-container .tab:nth-child(1){
+    display: block;
+}
+
+.tab-section-container .display-none{
+    display: none !important;
 }
