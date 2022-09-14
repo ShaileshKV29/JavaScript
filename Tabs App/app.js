@@ -11,8 +11,6 @@ function tab_click(element)
         else{
             node.className = "display-none tab"
         }
-        // console.log(typeof(node.id[node.id.length-1]))
-        // console.log(typeof(lastIndex))
     })
 
 }
