@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.popup_form{
+    padding: 20px;
+    width: 98%;
+    height: 95.5vh;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup_form form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    background-color: #FFF;
+    font-family: 'Nunito';
+    border-radius: 3px;
+    position: relative;
+    opacity: 1;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+form input{
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'Nunito';
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 189, 189);
+}
+
+form .terms{
+    margin: 10px 0;
+}
+
+form .terms input{
+    margin: 0;
+}
+
+form .btn{
+    padding: 15px;
+    margin: 10px 0;
+    font-family: 'Nunito';
+    background-color: #1b1c1e;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+form .cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 12px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup_btn{
+    text-align: center;
+    margin-top: 40px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.popup_btn button
+{
+    padding: 10px 50px;
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
