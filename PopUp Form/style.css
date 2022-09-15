@@ -22,18 +22,22 @@ body{
     left: 0;
     z-index: 10;
     display: none;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
 }
 
 .popup_form form{
-    width: 40%;
+    width: 500px;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 60px 40px;
     background-color: #FFF;
     font-family: 'Nunito';
     border-radius: 3px;
     position: relative;
     opacity: 1;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 form input{
@@ -41,6 +45,8 @@ form input{
     margin: 10px 0;
     font-family: 'Nunito';
     outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 189, 189);
 }
 
 form .terms{
@@ -52,12 +58,12 @@ form .terms input{
 }
 
 form .btn{
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     font-family: 'Nunito';
-    background-color: #28a745;
-    border: 2px solid #28a745;
-    border-radius: 3px;
+    background-color: #1b1c1e;
+    border: none;
+    border-radius: 5px;
     color: #FFF;
 }
 
@@ -68,6 +74,7 @@ form .cross{
     padding: 10px 12px;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
 }
 
 .popup_btn{
