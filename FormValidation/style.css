@@ -43,10 +43,23 @@ body{
 form input{
     padding: 10px;
     margin: 10px 0;
+    width: 100%;
     font-family: 'Nunito';
     outline: none;
     border-radius: 5px;
     border: 1px solid rgb(192, 189, 189);
+}
+
+form .form_error{
+    font-size: 12px;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: -7px;
+    margin-bottom: 5px;
+    display: none;
 }
 
 form .terms{
@@ -55,6 +68,7 @@ form .terms{
 
 form .terms input{
     margin: 0;
+    width: auto;
 }
 
 form .btn{

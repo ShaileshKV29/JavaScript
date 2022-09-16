@@ -14,9 +14,18 @@
     <section class="popup_form" id="popup_form">
         <form action="" id="popupForm">
             <button class="cross" id="formClose">X</button>
-            <input type="text" placeholder="E-Mail">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
+            <div class="form-input">
+                <input type="text" placeholder="E-Mail">
+                <p id="email_error" class="form_error">Please enter Email</p>
+            </div>
+            <div class="form-input">
+                <input type="password" placeholder="Password">
+                <p id="password_error" class="form_error">Please enter Email</p>
+            </div>
+            <div class="form-input">
+                <input type="password" placeholder="Confirm Password">
+                <p id="password_error" class="form_error">Please enter Email</p>
+            </div>
             <div class="terms">
                 <input type="checkbox">
                 Agree to Terms and Conditions
