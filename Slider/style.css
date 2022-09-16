@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-container{
+    width: 100%;
+}
+
+.slider-container .slider{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slider-container img{
+    width: 100%;
+}
