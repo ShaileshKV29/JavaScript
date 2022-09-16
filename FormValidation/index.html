@@ -15,22 +15,22 @@
         <form action="" id="popupForm">
             <button class="cross" id="formClose">X</button>
             <div class="form-input">
-                <input type="text" placeholder="E-Mail">
-                <p id="email_error" class="form_error">Please enter Email</p>
+                <input type="text" placeholder="E-Mail" id="email">
+                <p id="email_error" class="form_error"></p>
             </div>
             <div class="form-input">
-                <input type="password" placeholder="Password">
-                <p id="password_error" class="form_error">Please enter Email</p>
+                <input type="password" placeholder="Password" id="password">
+                <p id="password_error" class="form_error"></p>
             </div>
             <div class="form-input">
-                <input type="password" placeholder="Confirm Password">
-                <p id="password_error" class="form_error">Please enter Email</p>
+                <input type="password" placeholder="Confirm Password" id="confirm_password">
+                <p id="confirm_password_error" class="form_error"></p>
             </div>
             <div class="terms">
                 <input type="checkbox">
                 Agree to Terms and Conditions
             </div>
-            <button class="btn">Submit</button>
+            <button class="btn" id="btn_submit">Submit</button>
         </form>
     </section>
     <script src="app.js"></script>
